@@ -47,6 +47,13 @@ if [ ! -d unibreak ]; then
 		tar -xz -C unibreak --strip-components=1
 fi
 
+# fontconfig
+if [ ! -d fontconfig ]; then
+	mkdir fontconfig
+	$WGET https://www.freedesktop.org/software/fontconfig/release/fontconfig-${v_fontconfig}.tar.xz -O - | \
+		tar -xJ -C fontconfig --strip-components=1
+fi
+
 # libass
 [ ! -d libass ] && git clone https://github.com/libass/libass
 
