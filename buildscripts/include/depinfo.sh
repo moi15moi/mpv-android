@@ -15,6 +15,7 @@ v_harfbuzz=10.1.0
 v_fribidi=1.0.16
 v_freetype=2-13-3
 v_mbedtls=3.6.2
+v_fontconfig=2.16.0
 
 
 ## Dependency tree
@@ -27,7 +28,8 @@ dep_freetype2=()
 dep_fribidi=()
 dep_harfbuzz=()
 dep_unibreak=()
-dep_libass=(freetype2 fribidi harfbuzz unibreak)
+dep_fontconfig=()
+dep_libass=(freetype2 fribidi harfbuzz unibreak fontconfig)
 dep_lua=()
 dep_libplacebo=()
 dep_mpv=(ffmpeg libass lua libplacebo)
@@ -40,4 +42,4 @@ dep_mpv_android=(mpv)
 v_ci_ffmpeg=n7.0.2
 
 # filename used to uniquely identify a build prefix
-ci_tarball="prefix-ndk-${v_ndk}-lua-${v_lua}-unibreak-${v_unibreak}-harfbuzz-${v_harfbuzz}-fribidi-${v_fribidi}-freetype-${v_freetype}-mbedtls-${v_mbedtls}-ffmpeg-${v_ci_ffmpeg}.tgz"
+ci_tarball="prefix-ndk-${v_ndk}-lua-${v_lua}-unibreak-${v_unibreak}-harfbuzz-${v_harfbuzz}-fribidi-${v_fribidi}-freetype-${v_freetype}-fontconfig${v_fontconfig}-mbedtls-${v_mbedtls}-ffmpeg-${v_ci_ffmpeg}.tgz"

@@ -15,6 +15,7 @@ lines=(
 	"* mbedtls $v_mbedtls"
 	"* dav1d videolan/dav1d@$(commit_hash dav1d)"
 	"* ffmpeg ffmpeg/ffmpeg@$(commit_hash ffmpeg)"
+	"* fontconfig $v_fontconfig"
 	"* freetype ${v_freetype//-/.}"
 	"* fribidi $v_fribidi"
 	"* harfbuzz $v_harfbuzz"
