@@ -58,7 +58,7 @@ if [ ! -d lua ]; then
 fi
 
 # libplacebo
-[ ! -d libplacebo ] && git clone --recursive https://github.com/haasn/libplacebo
+[ ! -d libplacebo ] && git clone -b test --recursive https://code.videolan.org/moi15moi/libplacebo.git
 
 # mpv
 [ ! -d mpv ] && git clone https://github.com/mpv-player/mpv
