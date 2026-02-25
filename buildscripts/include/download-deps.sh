@@ -47,6 +47,20 @@ if [ ! -d unibreak ]; then
 		tar -xz -C unibreak --strip-components=1
 fi
 
+# expat
+if [ ! -d expat ]; then
+	mkdir expat
+	$WGET https://github.com/libexpat/libexpat/releases/download/R_${v_expat//./_}/expat-${v_expat}.tar.gz -O - | \
+		tar -xz -C expat --strip-components=1
+fi
+
+# fontconfig
+if [ ! -d fontconfig ]; then
+	mkdir fontconfig
+	$WGET https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/${v_fontconfig}/fontconfig-${v_fontconfig}.tar.gz -O - | \
+		tar -xz -C fontconfig --strip-components=1
+fi
+
 # libass
 [ ! -d libass ] && git clone https://github.com/libass/libass
 
