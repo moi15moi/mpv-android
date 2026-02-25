@@ -18,8 +18,7 @@ cd _build$ndk_suffix
 
 ../configure \
 	--host=$ndk_triple --with-pic \
-	--enable-static --disable-shared \
-	--enable-libunibreak --enable-fontconfig
+	--enable-static --disable-shared
 
 make -j$cores
 make DESTDIR="$prefix_dir" install
