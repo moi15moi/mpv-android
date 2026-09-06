@@ -17,7 +17,7 @@ v_freetype=2-14-2
 v_mbedtls=3.6.7
 v_libxml2=2.15.2
 v_fontconfig=2.18.1
-v_curl=8_20_0
+v_curl=8_22_0
 
 
 ## Dependency tree
