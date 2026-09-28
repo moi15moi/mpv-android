@@ -83,6 +83,6 @@ if [ ! -d curl ]; then
 fi
 
 # mpv
-[ ! -d mpv ] && git clone https://github.com/mpv-player/mpv
+[ ! -d mpv ] && git clone https://github.com/moi15moi/mpv
 
 cd ..
