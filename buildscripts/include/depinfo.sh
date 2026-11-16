@@ -19,6 +19,11 @@ v_libxml2=2.15.4
 v_fontconfig=2.18.3
 v_curl=8.23.0
 
+# libplacebo fork with Android colorspace hint (MR !940)
+v_libplacebo_repo=https://code.videolan.org/cwasser/libplacebo.git
+v_libplacebo_branch=android-colorspace-hint
+v_libplacebo_commit=25513055e3e9a9358407bfcb036d4846be4bc4a4
+
 
 ## Dependency tree
 
@@ -45,4 +50,4 @@ dep_mpv_android=(mpv)
 v_ci_ffmpeg=n9.0.2
 
 # filename used to uniquely identify a build prefix
-ci_tarball="prefix-n${v_ndk}-l${v_lua}-u${v_unibreak}-h${v_harfbuzz}-fr${v_fribidi}-ft${v_freetype}-x${v_libxml2}-fo${v_fontconfig}-m${v_mbedtls}-c${v_curl}-ff${v_ci_ffmpeg}.tgz"
+ci_tarball="prefix-n${v_ndk}-l${v_lua}-u${v_unibreak}-h${v_harfbuzz}-fr${v_fribidi}-ft${v_freetype}-x${v_libxml2}-fo${v_fontconfig}-m${v_mbedtls}-c${v_curl}-ff${v_ci_ffmpeg}-pl${v_libplacebo_commit:0:12}.tgz"

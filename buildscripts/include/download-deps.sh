@@ -73,7 +73,11 @@ if [ ! -d lua ]; then
 fi
 
 # libplacebo
-[ ! -d libplacebo ] && git clone --recursive https://github.com/haasn/libplacebo
+if [ ! -d libplacebo ]; then
+	git clone --recursive -b "$v_libplacebo_branch" "$v_libplacebo_repo" libplacebo
+	git -C libplacebo checkout "$v_libplacebo_commit"
+	git -C libplacebo submodule update --init --recursive
+fi
 
 # curl
 if [ ! -d curl ]; then
