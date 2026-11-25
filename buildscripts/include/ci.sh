@@ -64,9 +64,9 @@ elif [ "$1" = "install" ]; then
 
 	msg "Fetching mpv"
 	mkdir -p deps/mpv
-	$WGET https://github.com/mpv-player/mpv/archive/master.tar.gz -O master.tgz
-	tar -xzf master.tgz -C deps/mpv --strip-components=1
-	rm master.tgz
+	$WGET https://github.com/moi15moi/mpv/archive/Try-to-fix-1289.tar.gz -O Try-to-fix-1289.tgz
+	tar -xzf Try-to-fix-1289.tgz -C deps/mpv --strip-components=1
+	rm Try-to-fix-1289.tgz
 
 	msg "Trying to fetch existing prefix"
 	mkdir -p prefix
